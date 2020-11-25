@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML 2014 Designer Edition (Trial) 12.2.4.5273 (http://www.liquid-technologies.com) -->
+<MCTTestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="C:\P4V\UTF_Automation\UTF\xml\MCT_TestSchema.xsd">
+
+		<Testcase Id="MCT_PDO_SF_to_SF_Sequence" Name="MCT_PDO_SF_to_SF_Sequence"  Compare="false">
+			<TaskName>MCT_SNOWFLAKE_PDO_INCOMING_PORT_SEQUENCE</TaskName>
+			<AgentName>${params.get("agent")}$</AgentName>
+			<MappingName TaskType="MAPPING">CMD_SNOWFLAKE_PDO_INCOING_PORT_SEQUENCE</MappingName>
+			</Testcase>
+		
+</MCTTestData>

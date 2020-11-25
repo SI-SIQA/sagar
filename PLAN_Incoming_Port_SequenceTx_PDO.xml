@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+
+<parameter name="url" value="https://qa-ma.ml.infaqa.com/identity-service/home"/>
+
+<parameter name="DATAHOME" value="mct_cmd/Snowflake_EcoSystem_PDO"/>
+
+<parameter name="username" value="skm@msdsales.com"/>
+
+<parameter name="password" value="cloud_12345"/>
+
+<parameter name="agent" value="INubuntu02"/>
+
+<parameter name="TgtFilePath" value="/export/home/cloudqayn1/simran"/>
+
+<parameter name="AgentInstallLocation" value="/root/rel/skm@msdsales.com/infaagent"/>
+
+<parameter name="AgentPlatform" value="linux"/>
+
+<parameter name="linuxUser" value="root"/>
+
+<parameter name="linuxPassword" value="infa@123"/>
+
+
+<test name="Nopackage">
+
+
+<classes>
+
+<class name="com.infacloud.test.ui.application.mct_cmd.PDO_Snowflake.PDOSeq"/>
+
+</classes>
+
+</test>
+
+</suite>

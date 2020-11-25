@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MappingTestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\P4V\UTF_Automation\UTF\xml\Mappings_TestSchema.xsd">
+	
+	<Testcase Id="PDO_SF_to_SF_Sequence" Name="PDO_SF_to_SF_Sequence" Compare="false">
+        <MappingName>CMD_SNOWFLAKE_PDO_INCOING_PORT_SEQUENCE</MappingName>
+
+     	    <Sources>
+            <SourceTr Name="snowflake_standard_src">
+                <Source>
+                <Connection name="snowflake_saroy" ConnectionType="CCI"> </Connection>
+                <SourceType>
+                    <Object>
+					     <Single Name="PDO_PCTEAM/PDO_SCHEMA2/PDO_IPST">
+						 </Single>
+					   </Object>
+                </SourceType>
+                </Source>
+            </SourceTr>
+        </Sources>
+        <Targets>
+            <TargetTr Name="snowflake_standard_tar">
+                <Links>
+                    <Link From="snowflake_standard_src" />
+                </Links>
+                <Target>
+                    <Connection name="snowflake_saroy" ConnectionType="CCI"></Connection>
+                    <TargetType>
+                        <Object Name="PDO_PCTEAM/PDO_SCHEMA2/PDO_IPST_Tar">	
+                        </Object>
+                    </TargetType>
+                    <Operation>INSERT</Operation>
+                </Target>
+                <FieldMapping>
+                    <Automatic />
+                </FieldMapping>
+            </TargetTr>
+        </Targets>
+    </Testcase>
+    
+</MappingTestData>
+	
